@@ -49,7 +49,7 @@ jobs:
             # internally it uses a docker to run the desired platform
             PLATFORM_NAME="linux-gnu-${{ matrix.dist }}"
             BUILD_PLATFORM="docker_${{ matrix.dist }}"
-            CPU_ARCH="x86_64"
+            CPU_ARCH="arm64"
           elif [ x"${{ matrix.os }}" == x"macos-13" ]; then
             PLATFORM_NAME="apple-darwin"
             BUILD_PLATFORM="local"
